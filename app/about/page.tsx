@@ -14,9 +14,9 @@ export default function About() {
       <header className="px-5 md:px-12 pt-8 md:pt-10">
         <p className="label-mono">About</p>
         <h1 className="mt-3 text-[1.8rem] md:text-[2.6rem] leading-[1.05] tracking-[-0.02em] max-w-[22ch]">
-          GTM hire. Analyst.{" "}
+          GTM for{" "}
           <span className="font-serif italic font-medium text-cobalt">
-            Both before lunch.
+            AI startups.
           </span>
         </h1>
       </header>
