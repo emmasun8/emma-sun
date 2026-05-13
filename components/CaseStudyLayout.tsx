@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import { ReactNode } from "react";
 
@@ -22,7 +23,7 @@ export function CaseStudyLayout({
   subtitle: string;
   teaser: string;
   meta?: { label: string; value: string }[];
-  heroImage?: { ratio?: string; alt: string };
+  heroImage?: { ratio?: string; alt: string; src?: string; width?: number; height?: number };
   children?: ReactNode;
   result?: ResultProps;
   artifact?: { ratio?: string; alt: string };
@@ -70,10 +71,31 @@ export function CaseStudyLayout({
       {heroImage ? (
         <div className="px-6 md:px-10">
           <div className="mx-auto max-w-[1480px]">
-            <ImagePlaceholder
-              ratio={heroImage.ratio ?? "16/8"}
-              alt={heroImage.alt}
-            />
+            {heroImage.src ? (
+              <div
+                className="overflow-hidden rounded-md bg-paper-deep relative"
+                style={{
+                  aspectRatio: (heroImage.ratio ?? "16/8").replace(
+                    "/",
+                    " / ",
+                  ),
+                }}
+              >
+                <Image
+                  src={heroImage.src}
+                  alt={heroImage.alt}
+                  fill
+                  sizes="(max-width: 1480px) 100vw, 1480px"
+                  className="object-cover object-center"
+                  priority
+                />
+              </div>
+            ) : (
+              <ImagePlaceholder
+                ratio={heroImage.ratio ?? "16/8"}
+                alt={heroImage.alt}
+              />
+            )}
           </div>
         </div>
       ) : null}

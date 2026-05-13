@@ -21,16 +21,17 @@ export default function LawXLLM() {
         { label: "Modality", value: "Voice-first, chat fallback" },
       ]}
       heroImage={{
-        ratio: "16/8",
-        alt: "Voice intake user flow diagram, hero",
+        ratio: "4/3",
+        alt: "Emma with teammates on stage at Stanford LLMxLaw Hackathon, runner-up announcement on screen behind them",
+        src: "/images/lawxllm-runner-up.jpg",
       }}
       result={{
         value: "2nd",
         context:
           "Out of 50+ teams. Jury feedback emphasized the user-flow and modality decisions over the underlying model choice, which is the right read. The product is the design.",
       }}
-      prev={{ href: "/projects/conference-outreach", label: "Conference Playbook" }}
-      next={{ href: "/projects", label: "All work" }}
+      prev={{ href: "/projects", label: "All projects" }}
+      next={{ href: "/projects/pubmed-ai-agent", label: "PubMed AI Agent" }}
     >
       <CSBlock label="Problem">
         <p>
