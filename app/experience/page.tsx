@@ -17,6 +17,14 @@ type Role = {
 
 const ROLES: Role[] = [
   {
+    years: "Apr 2026 - Present",
+    title: "GTM & Sales",
+    company: "Miranda AI (Antler Residency)",
+    location: "San Francisco, CA",
+    detail:
+      "Built outbound pipeline and structured lead-tracking workflows that opened visibility into conversion funnel and sales performance. Executed multi-channel GTM outreach, ran daily prospecting and engagement tracking, and worked with the founders to refine messaging and positioning against real customer-response data.",
+  },
+  {
     years: "Feb 2026 - Present",
     title: "Data Marketing Manager (Part-Time)",
     company: "FengCha",
