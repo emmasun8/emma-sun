@@ -36,8 +36,9 @@ export default function About() {
 
         <div className="md:col-span-7 md:col-start-6 space-y-3 md:space-y-4 text-[1rem] md:text-[1.08rem] leading-[1.55] text-ink/90 max-w-[62ch]">
           <p>
-            Most GTM hires can&rsquo;t read a P&amp;L. Most analysts
-            can&rsquo;t write a landing page. I do both, usually before lunch.
+            I run go-to-market and the analytics behind it &mdash; finding
+            your buyers, writing the message, building the funnel, and reading
+            the numbers that show whether it worked.
           </p>
           <p>
             <span className="label-mono mr-2 align-middle">Today</span>
