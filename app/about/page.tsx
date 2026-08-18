@@ -55,8 +55,7 @@ export default function About() {
             <span className="label-mono mr-2 align-middle">Receipts</span>
             2nd at the Stanford LAWxLLM Hackathon. PubMed AI agent demoed at
             AWS Startup Loft. MSBA Fellowship Scholar at UC Davis. GenAI certs
-            from Google and NVIDIA. $1.2M in untapped revenue surfaced for a
-            previous client.
+            from Google and NVIDIA.
           </p>
           <p>
             If you&rsquo;re early, building something good, and need someone
